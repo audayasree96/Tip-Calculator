@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="tipcalculator.js"></script>
+  <style>
+    h1{
+      background:rosybrown;
+  color: white;
+  margin: 0;
+  padding: 10px 100px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+    }
+    #container {
+  height: 525px;
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  
+}
+  </style>
+</head>
+<body>
+  <div id="container">
+  
+   <h1>Tip Calculator</h1>
+
+    <body>
+      
+            How much was your bill?
+              <p>
+                RS <input id="billamt" type="text" placeholder="Bill Amount"></p>
+      
+                <p>How was your service?</p>
+                  <p>
+                    <select id="serviceQual">
+                  <option disabled selected value="0">-- Choose an Option --</option>
+                  <option value="0.3">30%  - Outstanding</option>
+                  <option value="0.2">20%  -  Good</option>
+                  <option value="0.15">15% - It was OK</option>
+                  <option value="0.1">10% - Bad</option>
+                  <option value="0.05">5&#37; &#45; Terrible</option>
+                    </select> </p>
+      
+      
+          <p>How many people are sharing the bill?</p>
+          <input id="peopleamt" type="text" placeholder="Number of People"> people
+          
+        <p><button type="button" id="calculate" onclick="calculateTip()">Calculate!</button></p>
+        </form>
+        <form>
+      
+          Total Tip<input type="text" id="tiptotal" /><sup>Rs</sup>
+          <p id="tip">0.00  <span >each</span></p>
+         
+        </form>
+      
+    </div> 
+  </body>
+</html>
